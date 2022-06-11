@@ -34,6 +34,16 @@ var passwordnumeric = function () {
   var asknumeric = window.prompt('Would you like your password to contain numbers?')
 }
 
+// using special characters
 var passwordspecial = function () {
   var askspecial = window.prompt('Would you like your password to contain special characters?')
+
+  if(askspecial === null || askspecial === "") {
+    window.alert("Please use 'yes' or 'no' answers.");
+    return passwordspecial}
+  
+  if (askspecial === "yes") {}
+
+  else if (askspecial === "no") {}
+
 }
