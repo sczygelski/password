@@ -33,7 +33,7 @@ function writePassword() {
 }
 
 function generatePassword() {
-  var passwordupper = confirm("hello")
+  var passwordupper = "";
 }
 
 
@@ -42,9 +42,10 @@ var passwordlength = function() {
   var asklength = window.prompt('How many characters long would you like your password? Passwords must contain at least 8 and at most 128.')
 }
 
-var passwordupper = function () {
+var passwordupper = function (message) {
   var askupper = window.prompt('Would you like your password to contain uppercase letters?')
 }
+
 
 var passwordlower = function () {
   var asklower = window.prompt('Would you like your password to contain lowercase letters?')
@@ -61,4 +62,11 @@ var passwordspecial = function () {
 
   else if (askspecial === "no") {}
 
+}
+
+//try again?
+function getinfo() {
+  choices = [];
+  passwordlength = parseInt(prompt("How many characters long would you like your password? Passwords must contain at least 8 and at most 128."));
+  
 }
