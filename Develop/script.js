@@ -12,10 +12,9 @@
 
 // Assignment code here
 
-var passwordupper = [A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z];
-var passwordlower = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,q,x,y,z];
-var passwordnumeric = [1,2,3,4,5,6,7,8,9,0];
-var passwordspecial = [!,",#,$,%,&,',(,),*,+,-,.,/,:,;,<,>,=,?,@,[,],^,_,{,|,},~];
+var passwordupper = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+var passwordlower = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','q','x','y','z'];
+var passwordnumeric = ['1','2','3','4','5','6','7','8','9','0'];
 
 
 
@@ -33,9 +32,9 @@ function writePassword() {
   passwordText.value = password;
 }
 
-function generatePassword() [
-
-]
+function generatePassword() {
+  var passwordupper = confirm("hello")
+}
 
 
 //things you need
@@ -55,7 +54,7 @@ var passwordnumeric = function () {
   var asknumeric = window.prompt('Would you like your password to contain numbers?')
 }
 
-// using special characters - rewrite this to not use strings
+
 var passwordspecial = function () {
   var askspecial = window.prompt('Would you like your password to contain special characters?')
   if (askspecial === "yes") {}
