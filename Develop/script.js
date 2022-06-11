@@ -68,5 +68,8 @@ var passwordspecial = function () {
 function getinfo() {
   choices = [];
   passwordlength = parseInt(prompt("How many characters long would you like your password? Passwords must contain at least 8 and at most 128."));
-  
+  if(isNaN(passwordlength) || passwordlength < 8 || passwordlength > 128) {
+    alert("Password length must be between 8 and 128 characters.")
+    return false;
+  }
 }
