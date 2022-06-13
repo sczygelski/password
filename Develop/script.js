@@ -13,10 +13,10 @@
 // Assignment code here
 
 var passwordlength = window.prompt("How many characters long would you like your password? Passwords must contain at least 8 and at most 128.");
-var passwordupper = window.prompt("Would you like your password to contain upper case letters?");
-var passwordlower = window.prompt("Would you like your password to contain lower case letters?");
-var passwordnumeric = window.prompt("Would you like your password to contain numbers?");
-var passwordspecial = window.prompt("Would you like your password to contain special characters?");
+var passwordupper = window.confirm("Would you like your password to contain upper case letters?");
+var passwordlower = window.confirm("Would you like your password to contain lower case letters?");
+var passwordnumeric = window.confirm("Would you like your password to contain numbers?");
+var passwordspecial = window.confirm("Would you like your password to contain special characters?");
 
 var passwordupper = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 var passwordlower = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','q','x','y','z'];
