@@ -28,8 +28,9 @@ function writePassword() {
 
   var passwordlength = window.prompt("How many characters long would you like your password? Passwords must contain at least 8 and at most 128.");
   if (passwordlength < 8 || passwordlength > 128) {
-    alert("Not the right length!")
-  }
+    alert("You entered " + passwordlength + " which is not between 8 and 128. Try again!")
+    return;
+  }  
 var passwordupper = window.confirm("Would you like your password to contain upper case letters?");
 var passwordlower = window.confirm("Would you like your password to contain lower case letters?");
 var passwordnumeric = window.confirm("Would you like your password to contain numbers?");
