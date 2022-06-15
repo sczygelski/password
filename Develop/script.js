@@ -64,7 +64,7 @@ passwordspecial = confirm("Would you like your password to contain special chara
 
   for(var i = 0; i < passwordlength; i++) {
     var randomLetter = Math.floor(Math.random() * answer.length);
-    password +=answer(randomLetter);
+    password +=answer[randomLetter];
   }
   return password;
 }
